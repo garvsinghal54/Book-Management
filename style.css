@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #2d3436;
+    padding: 40px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1e272e;
+    letter-spacing: 1px;
+}
+
+/* Add Book Button */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6c5ce7, #4834d4);
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.25);
+    transition: 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(108, 92, 231, 0.35);
+}
+
+/* Table Container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Table Header */
+table th {
+    background: #111827;
+    color: white;
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table Data */
+table td {
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+/* Alternate Row Colors */
+table tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+/* Hover Effect */
+table tr:hover {
+    background: #eef2ff;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
